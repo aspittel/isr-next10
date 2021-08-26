@@ -1,0 +1,12 @@
+type Comment @model @auth(rules: [{allow: public}]) @key(name: "byPost", fields: ["postID"]) {
+  id: ID!
+  content: String
+  postID: ID
+}
+
+type Post @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String!
+  content: String
+  Comments: [Comment] @connection(keyName: "byPost", fields: ["id"])
+}

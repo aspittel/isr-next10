@@ -3,6 +3,8 @@ import Head from 'next/head'
 import { withSSRContext } from 'aws-amplify'
 import { Post } from '../src/models'
 
+import Image from 'next/image'
+
 export default function Home ({ posts }) {
   return (
     <div>
@@ -10,6 +12,8 @@ export default function Home ({ posts }) {
         <title>Amplify + Next</title>
         <meta name='description' content='Amplify + Next!' />
       </Head>
+
+      <Image src='/blair.jpeg' alt='Blair' height={200} width={150} />
 
       <main>
         {posts.map(post => (

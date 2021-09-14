@@ -1,9 +1,11 @@
+import { useRouter } from 'next/router'
 import React from 'react'
 
-export default function About() {
+export default function About(props) {
+  const routeData = useRouter()
   return (
     <div>
-      about!
+      {JSON.stringify(routeData.query)}
     </div>
   )
 }

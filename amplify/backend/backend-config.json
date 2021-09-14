@@ -20,5 +20,13 @@
         }
       }
     }
+  },
+  "function": {
+    "next10bloge53fc67d": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": []
+    }
   }
 }

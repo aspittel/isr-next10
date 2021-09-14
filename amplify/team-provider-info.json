@@ -10,6 +10,13 @@
       "StackName": "amplify-next10blog-staging-181620",
       "StackId": "arn:aws:cloudformation:us-east-1:000691573582:stack/amplify-next10blog-staging-181620/8c38c570-05d0-11ec-8490-12e727a79a85",
       "AmplifyAppId": "d2rrgg35plz3c2"
+    },
+    "categories": {
+      "function": {
+        "next10bloge53fc67d": {
+          "githubKey": "helloworld"
+        }
+      }
     }
   }
 }

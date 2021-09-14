@@ -1,0 +1,12 @@
+{
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "githubKey",
+      "environmentVariableName": "github_key"
+    }
+  ],
+  "secretNames": [
+    "github_key"
+  ]
+}
